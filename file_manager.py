@@ -1,7 +1,7 @@
-import os, shutil, getpass
+import os, shutil
 
-root_folder = f"C:/Users/{getpass.getuser()}/Downloads"
-downloaded_items = os.listdir (root_folder)
+root_folder = input ("Enter the folder path ")
+root_folder = root_folder.replace("\\","/")
 
 
 for item in downloaded_items:
